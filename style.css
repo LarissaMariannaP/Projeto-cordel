@@ -9,37 +9,64 @@
     --font-text: 'Sriracha';
     --font-padrao: arial, verdana, helvetica, sans-serif;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
     font-family: var(--font-padrao);
+    background-color: rgb(168, 174, 174);
+    min-height: 100vh;
 }
 
 header{
     background-color: black;
     color: white;
-    font-family: var(--font-header);
-    height: 200px;
     text-align: center;
+    
 }
-
-h2{
+header h1 {
+    font-family: var(--font-header);
+    padding-top: 50px;
+}
+header p{
+    font-size: 1em;
+    padding-bottom: 50px;
     font-family: var(--font-padrao);
 }
+
 a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
-h2 a:hover{
+p a:hover{
     color: blueviolet;
     text-decoration: underline;
-    font-size: 5px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
 }
 
-
-p{
+section p {
     font-family: var(--font-text);
-    padding: 10px;
-    font-size: 3.5vw;
+    padding: 20px;
+}
+section.normal{
+    background-color: white;
+}
+
+section.imagem{
+    background-color: rgb(71, 68, 68);
+    color: white;
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.26);
 }
 
 #imagem01{
@@ -48,7 +75,14 @@ p{
     height: 80vh;
 }
 
-#imagem02{
+#imagem{
     background-image: url(imagens/background002.jpg);
     background-size: 100% 100%;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
 }
